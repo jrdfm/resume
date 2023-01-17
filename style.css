@@ -53,7 +53,7 @@ li{
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  font-size:9pt;
 }
 
 #sidebar{
@@ -63,7 +63,7 @@ li{
   height: 100%;
   padding: 0.6in var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  font-size: 9.5pt;
 }
 
 /* main */
@@ -107,7 +107,7 @@ li{
   /* XXX: 0.5px for aligning fx printing */
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
   font-weight: 400;
-  font-size: 11pt;
+  font-size: 12pt;
   color: #555;
 }
 
@@ -240,7 +240,7 @@ li{
 }
 
 .details h3{
-  font-size: 9pt;
+  font-size: 10pt;
 }
 
 .main-block:not(.concise) .details div{
