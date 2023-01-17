@@ -1,0 +1,6 @@
+2021-11-03T18:34:23+00:00 Yared#03 I: Start test public:2:nfa_move.
+2021-11-03T18:34:23+00:00 Yared#03 I: Test public:2:nfa_move is successful.
+2021-11-03T18:34:23+00:00 Yared#03 I: End test public:2:nfa_move.
+2021-11-03T18:34:23+00:00 Yared#03 I: Start test public:7:nfa_new_trans.
+2021-11-03T18:34:23+00:00 Yared#03 I: Test public:7:nfa_new_trans is successful.
+2021-11-03T18:34:23+00:00 Yared#03 I: End test public:7:nfa_new_trans.

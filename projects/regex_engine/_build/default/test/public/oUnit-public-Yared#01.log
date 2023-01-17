@@ -1,0 +1,12 @@
+2021-11-03T18:34:23+00:00 Yared#01 I: Start test public:0:nfa_accept.
+2021-11-03T18:34:23+00:00 Yared#01 I: Test public:0:nfa_accept is successful.
+2021-11-03T18:34:23+00:00 Yared#01 I: End test public:0:nfa_accept.
+2021-11-03T18:34:23+00:00 Yared#01 I: Start test public:4:re_to_nfa.
+2021-11-03T18:34:23+00:00 Yared#01 I: Test public:4:re_to_nfa is successful.
+2021-11-03T18:34:23+00:00 Yared#01 I: End test public:4:re_to_nfa.
+2021-11-03T18:34:23+00:00 Yared#01 I: Start test public:5:str_to_nfa.
+2021-11-03T18:34:23+00:00 Yared#01 I: Test public:5:str_to_nfa is successful.
+2021-11-03T18:34:23+00:00 Yared#01 I: End test public:5:str_to_nfa.
+2021-11-03T18:34:23+00:00 Yared#01 I: Start test public:9:regex_to_nfa.
+2021-11-03T18:34:23+00:00 Yared#01 I: Test public:9:regex_to_nfa is successful.
+2021-11-03T18:34:23+00:00 Yared#01 I: End test public:9:regex_to_nfa.
