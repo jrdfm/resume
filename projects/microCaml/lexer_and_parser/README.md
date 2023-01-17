@@ -5,7 +5,7 @@
 
 ## Introduction
 
-Implementation of MicroCaml — a *dynamically-typed* version of OCaml with a subset of its features. Because MicroCaml is dynamically typed, it is not type checked at compile time; like Ruby, type checking will take place when the program runs. As part of your implementation of MicroCaml, you will also implement parts of `mutop` (μtop or Microtop), a version of `utop` for MicroCaml.
+Implementation of MicroCaml — a *dynamically-typed* version of OCaml with a subset of its features. Because MicroCaml is dynamically typed, it is not type checked at compile time; like Ruby, type checking will take place when the program runs. There ia also an implementation of `mutop` (μtop or Microtop), a version of `utop` for MicroCaml.
 
 The lexer function will convert an input string of MicroCaml into a list of tokens, and your parser function will consume these tokens to produce an abstract symbol tree (AST), either for a MicroCaml expression, or for a `mutop` directive. 
 
