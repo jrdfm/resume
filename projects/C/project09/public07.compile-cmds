@@ -1,0 +1,3 @@
+gcc code.student.public07.c ourtest1.public07.c -o ourtest1.public07.x
+gcc code.student.public07.c ourtest2.public07.c -o ourtest2.public07.x
+gcc code.student.public07.c ourtest3.public07.c -o ourtest3.public07.x

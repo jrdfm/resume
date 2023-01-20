@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main(void) {
+
+
+  char c[1000];
+  scanf("%c",c);
+  printf("%s\n",c);
+
+
+
+  return 0;
+}

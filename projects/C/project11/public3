@@ -1,0 +1,14 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2021, Project #11
+# Public test 3 (public3)
+#
+# Tests the program with just one filename on the command line, meaning only
+# one thread will be created (besides the main thread).  The file does not
+# exist though, so of course it won't have any lines that are longer than 80
+# characters.
+#
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+./longlines2-threaded.x public3.cprogram

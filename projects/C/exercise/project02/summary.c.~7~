@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main(void) {
+
+  
+  char temp;
+  int d;
+
+  while(scanf("%c",&temp) != EOF)
+    {
+
+
+      if(temp != ' ')
+	{
+      if(temp == '*')
+	{
+	  scanf("%d",&d);
+          printf("%d\n",d); 	
+
+        }
+        } 
+      else
+      
+
+
+    }
+     printf("\n");
+      
+
+
+
+
+
+  return 0;
+}

@@ -1,0 +1,13 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2021, Project #11
+# Public test 7 (public7)
+#
+# Tests the program with ten filenames on the command line, so ten threads
+# will be created.  The files are of nontrivial size.
+#
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+# to avoid listing 10 filenames we just use wildcard characters
+./longlines2-threaded.x public7.cprogram??

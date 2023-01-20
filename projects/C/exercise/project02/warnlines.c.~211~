@@ -1,0 +1,112 @@
+#include<stdio.h>
+
+int main(void) {
+
+   char c[1000];
+   char temp;
+   int i,j,count,line,k,index;  
+   
+   i=0;
+    
+   while (scanf("%c",&temp) != EOF)
+
+     {
+           c[i]=temp;
+           i++;
+
+       	
+        }
+		
+      	
+        printf("%d\n", i);
+        
+        
+	count = 0;
+        line =0;
+        
+        for(j=0;j<i;j++)
+          {
+            char ch[1000];
+            index =0;
+	    if(c[j]!= '\n')
+	      { 
+                
+                index=j;
+		
+		   
+                   ch[index]=c[j];
+		   
+                       
+		 
+                 
+		/*        printf("%c",c[j]);
+	        printf("%c",ch[j]);
+		*/
+		/*            if(c[j] != ' ') */
+		 
+                count++;
+		
+	      }
+	    else
+	      { 
+                line++;
+		if(count !=0 && count <= 80)
+		  {
+        
+                    printf(" %5d",line);
+                    printf(": ");
+		    for(k=j-count;k<j;k++)
+		      {
+                        printf("%c",ch[k]);
+                      } 
+		    printf("\n");
+
+                    
+                     }
+                else if(count >80)
+		  {
+		    printf("*");
+                   printf(" %5d",line);
+                    printf(": ");
+		    for(k=j-count;k<j;k++)
+		      {
+                        printf("%c",ch[k]);
+                      } 
+                    printf("\n");
+		    printf("%88c",' ');
+		    for(j=0;j<(count+8)-88;j++)
+		      {
+			printf("%c",'^');
+                       }
+                    printf("\n");
+		    count =0;
+
+		  }
+		/*
+                printf(" %d",count);
+		printf("\n");
+		*/
+		               
+                 count = 0; 
+               
+                }
+
+             
+          } 
+          
+    
+     
+     
+      
+        
+       
+       
+           
+
+
+return 0;
+
+
+}
+        
+  	

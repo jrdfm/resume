@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(void) {
+
+  char temp;
+  char c[1000];
+  /*  scanf("%c",temp);
+   */
+  /*  
+   
+  int i =0;
+  while(temp != '\n')
+    {
+      c[i]=temp;
+     
+      i++;
+      scanf("%c",temp); 
+    }
+  */
+  scanf("%s",c);  
+  printf("%s\n",c);
+  
+
+
+  return 0;
+}

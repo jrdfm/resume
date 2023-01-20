@@ -1,0 +1,24 @@
+#!/bin/tcsh
+
+#
+# This test checks the exit status of your program when it is run without a
+# command line argument.  Although your program should not print any output
+# in that case the test uses ">& /dev/null" to throw away your program's
+# output anyway, because even if it does print any, only its exit status
+# matters.
+#
+
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+./check-comments.x >& /dev/null
+
+# this is examining the exit status of check-comments.x
+if ($status == 2) then
+  echo 'Success!'
+  exit 0
+else
+  echo
+  echo 'Failure!  (Exit status differed from expected output.)'
+  exit 1
+endif

@@ -1,0 +1,5 @@
+plus   R1 R2 R3
+minus  R2 R3 R4
+times  R3 R4 R5
+and    R5 R4 R3
+or     R1 R3 R5

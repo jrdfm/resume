@@ -1,0 +1,52 @@
+#include<stdio.h>
+
+int main(void) {
+
+   char c[1000];
+   char temp;
+   int i;  
+
+   
+    
+   do
+      {
+
+        	 
+	
+        
+	   
+	  while (scanf("%c", &temp) != '\n')  
+	    {   /*  printf("%c <--First\n",temp);*/
+	  
+           c[i]=temp;
+           
+	  i++;
+	    }
+
+           printf("%s\n",c);	
+        }
+		
+    
+	/*
+        printf("%c <--last\n", temp);
+	*/
+           
+      
+
+
+
+   while(temp != EOF ); 
+     
+      
+        
+       
+       
+           
+
+
+return 0;
+
+
+}
+        
+  	

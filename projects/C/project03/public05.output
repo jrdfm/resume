@@ -1,0 +1,5 @@
+0000: plus   R1 R2 R3
+0004: minus  R2 R3 R4
+0008: times  R3 R4 R5
+000c: and    R5 R4 R3
+0010: or     R1 R3 R5

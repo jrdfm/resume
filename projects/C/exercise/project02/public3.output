@@ -1,0 +1,9 @@
+     1: #include <stdio.h>
+     2: int main(void) {
+     3:   printf("This is a valid C program.\n");
+     4:   printf("It will compile and run.\n");
+     5:   printf("The programmer was very concerned about good style.\n");
+     6:   printf("So he or she avoided lines longer than 80 characters.\n");
+     7:   printf("I am glad that we got that cleared up!\n");
+     8:   return 0;
+     9: }

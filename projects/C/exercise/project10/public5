@@ -1,0 +1,11 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2021, Project #10
+# Public test 5 (public5)
+#
+# Tests running the second program to compute jacobsthal(32).
+#
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+spim -file prog2.s < public5.inputdata | tail -n +2

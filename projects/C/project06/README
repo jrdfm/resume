@@ -1,0 +1,35 @@
+This is what the last three secret tests are testing:
+
+  12. Tests whether your makefile is compiling multiple source files in the
+      same compilation command (which defeats the purpose of separate
+      compilation).
+
+  13. Tests whether your makefile has any extra unnecessary dependencies.
+
+  14. Tests whether your makefile has any missing dependencies.
+
+      The results on this test were not high, meaning many people did not
+      pass it.  Keep in mind what Section 5 of the Project #6 assignment
+      said:
+
+      a. One header file in this project includes another one, so your
+         makefile MUST use one of the approaches discussed in class for
+         handling dependencies in this situation.  (This was discussed in
+         some detail in around 9 minutes of the video for Lecture #14 part
+         (e).)  If your makefile didn't do this then it has a missing
+         dependency.
+
+      b. The last two public tests use compare_name_lists() defined in
+         compare-name-lists.o (with associated header file
+         compare-name-lists.h), so these public test executables and the
+         object files for these tests needed different dependencies than the
+         executables and object files for the other tests.
+
+         To also paraphrase what Project #6 Section 5 said, your makefile
+         must recompile anything that uses compare-name-list.o if it were to
+         change (for example, if we were to give you a new version of it to
+         fix a bug).  If it didn't do that then it has a missing dependency.
+
+         And if any files include \texttt{compare-name-lists.h} they must be
+         recompiled if it is changed as well (if we were to give you a new
+         version of it).

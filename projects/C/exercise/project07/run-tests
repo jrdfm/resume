@@ -1,0 +1,55 @@
+#!/bin/tcsh
+
+#
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+#
+
+if (-e Makefile) then
+
+  make -f Makefile all
+
+  if ($status) then
+    echo
+    echo "'make all' target failed- your program probably doesn't compile."
+    exit -1
+  endif
+
+else
+
+  echo "Makefile not found- first compile your code for all tests manually."
+
+endif
+
+set all_correct
+unset anyerror
+
+foreach test_file (public*.x secret*.x student*.x)
+
+  set test = $test_file:r
+
+  # some projects have some (or all) tests that have to be run with input
+  # redirected from input files
+  if (-e $test.input) then
+    $test.x < $test.input |& cmp -s - $test.output
+    set exit_status = $status
+  else
+    $test.x |& cmp -s - $test.output
+    set exit_status = $status
+  endif
+
+  if ($exit_status == 0) then
+    echo "Test $test passed\!"
+  else
+    echo "Test $test FAILED.  :-("
+    unset all_correct
+   endif
+
+end
+
+echo
+if ($?all_correct) then
+  echo "All tests passed\!"
+else
+  echo "Some tests failed. :-("
+endif

@@ -1,0 +1,18 @@
+#include "functions.h"
+
+/* REMOVE THIS COMMENT, then write your implementations of the functions in
+ * this source file. 
+ * Skeleton versions of the functions already appear below.
+ */
+
+int prism_area(int l, int w, int h) {
+  return 12345;
+}
+
+long jacobsthal(short n) {
+  return 54321;
+}
+
+short ith_digit(long n, unsigned short i) {
+  return 123;
+}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(void) {
+
+ char c[1000];
+   char temp;
+  
+  
+    scanf("%c",&temp);
+   
+    
+   
+    int i;
+    i =0;
+  while(temp != '\n')
+    {
+      c[i]=temp;
+     
+      i++;
+      scanf("%c",&temp); 
+    }
+  
+  int j;
+  
+   
+    
+  printf("%s\n",c);
+  
+
+
+  return 0;
+}

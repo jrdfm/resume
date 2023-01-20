@@ -1,0 +1,26 @@
+#!/bin/tcsh
+
+#
+# This test checks the output of your program on a program that has too few
+# comments.
+#
+
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+# due to the behavior of tcsh (not explained in detail here) this setting is
+# needed to be able to properly detect whether the diff command below
+# succeeded
+unset anyerror
+
+./check-comments.x program1.c | diff - public1.results
+
+# this is examining the exit status of the diff command
+if ($status == 0) then
+  echo 'Success!'
+  exit 0
+else
+  echo
+  echo 'Failure!  (Output differed from expected output.)'
+  exit 1
+endif

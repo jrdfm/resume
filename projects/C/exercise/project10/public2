@@ -1,0 +1,11 @@
+#!/bin/tcsh -f
+
+# CMSC 216, Spring 2021, Project #10
+# Public test 2 (public2)
+#
+# Tests running the first program to compute prism_area(3, 6, 10).
+#
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+spim -file prog1.s < public2.inputdata | tail -n +2

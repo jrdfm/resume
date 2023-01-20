@@ -1,0 +1,23 @@
+#!/bin/tcsh
+
+#
+# This test checks the exit status of your program on a program that has too
+# few comments.  The ">& /dev/null" just throws away all of your program's
+# output, because we don't care about it for this test- only its exit status
+# is being examined.
+#
+
+# (c) Larry Herman, 2021.  You are allowed to use this code yourself, but
+# not to provide it to anyone else.
+
+./check-comments.x program1.c >& /dev/null
+
+# this is examining the exit status of check-comments.x
+if ($status == 1) then
+  echo 'Success!'
+  exit 0
+else
+  echo
+  echo 'Failure!  (Exit status differed from expected output.)'
+  exit 1
+endif

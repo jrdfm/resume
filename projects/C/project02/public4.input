@@ -1,0 +1,1 @@
+int main(void) { printf("This is almost, but not quite, a complete and valid C program.\n"); return 0; }

@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+  printf("This is a valid C program (and would compile if it was renamed\n");
+  printf("to have a name ending in .c).  It has two lines longer than 80 characters,\n");
+  printf("because its programmer did not pay attention to the course style requirements.\n");
+  printf("Bye!\n");
+
+  return 0;
+}

@@ -1,0 +1,7 @@
+abs    R2 R3
+eq     R1 R2 10000
+move   R1 R2
+li     R1 12340
+lw     R1 32100
+sys     1 R2
+sys     4
