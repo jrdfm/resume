@@ -727,14 +727,7 @@ According to the five scatter plots above the spread of mean payroll increases a
 
 # Part 3: Data transformations
 
-We'll then a new variable in the dataset that standardizes payroll conditioned on year. So, this column for team `i` in year `j` should equal:
-
-$$ standardized\_payroll_{ij} = \frac{{payroll}_{ij} - \overline{payroll}_{j} }{{s}_{j}} $$
-
-for team `i` in year `j`. 
-where <!--<em><span style="text-decoration: overline">payroll</span><sub>j</sub></em>--> <em>avg\_payroll<sub>j</sub></em> is the average payroll for year `j`, and <em>s<sub>j</sub></em> is the standard deviation of payroll for year `j`.
-
-
+We'll then a new variable in the dataset that standardizes payroll conditioned on year. 
 
 ```python
 # calculate the standard deviation of payroll for each year
